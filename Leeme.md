@@ -65,7 +65,7 @@ Los proveedores de email, los de mensajería instantánea, "la nube", etc. Son e
 
 Sabio es el dicho que dice: ❝Hombre precavido vale por 2❞, por lo que la desconfianza hacia los demás y tener en cuenta las posibilidades para que algo salga mal (Ley de Murphy), deberían ser lo primero antes de actuar.
 
-No es lo mismo leer Hola que algo asi, y ambos dicen lo mismo.
+No es lo mismo leer "Hola" que algo asi, y ambos dicen lo mismo.
 
 -----BEGIN PGP MESSAGE-----
 
@@ -79,7 +79,7 @@ uz0H2iuNI+bEywXa+KECA7rMif7yv7/yH50BC4OT0PG3ySE7Cu5rR04=
 
 -----END PGP MESSAGE----- 
 
-Las personas y la Inteligencia artificial son capaces de leer, procesar, analizar y actuar en consecuencia a lo que leen/ven. Si un simple humano puede entenderlo, la IA lo hace exponencialmente superior, pues lo que se dice explicitamente, implicitamente, se sugiere, el tono, la forma, el léxico, la ortografía, y los hábitos son información muy valiosa para hacer perfiles personales, y todas empresas big tech llevan años analizando, procesando y catalogándonos, todo por no haber usado cifrado pgp.
+Las personas y la Inteligencia artificial son capaces de leer, procesar, analizar y actuar en consecuencia a lo que leen/ven. Si un simple humano puede entenderlo, la IA lo hace exponencialmente superior, pues lo que se dice explicitamente, implicitamente, se sugiere, el tono, la forma, el léxico, la ortografía, y los hábitos son información muy valiosa para hacer perfiles personales, y todas las empresas big tech llevan años analizando, procesando y catalogándonos; todo por no haber usado cifrado pgp.
 
 ### Aún no es tarde
 
