@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi README con Pestañas</title>
+
+<!-- Estilo tipo GitHub README -->
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    background-color: #fff;
+    color: #24292f;
+    margin: 0;
+    padding: 20px;
+  }
+  h1, h2, h3, h4, h5, h6 { color: #24292f; }
+  a { color: #0366d6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Pestañas */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .tab {
+    padding: 10px 16px;
+    margin-right: 2px;
+    cursor: pointer;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .tab:hover { background-color: #e1e4e8; }
+  .tab.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    color: #24292f;
+  }
+
+  /* Contenido de cada pestaña */
+  .tab-content {
+    display: none;
+    border: 1px solid #e1e4e8;
+    padding: 20px;
+    border-radius: 0 6px 6px 6px;
+    background-color: #fff;
+  }
+  .tab-content.active { display: block; }
+
+  /* Markdown básico tipo GitHub */
+  pre {
+    background-color: #f6f8fa;
+    padding: 16px;
+    overflow-x: auto;
+    border-radius: 6px;
+  }
+  code { background-color: #f6f8fa; padding: 2px 4px; border-radius: 4px; }
+  blockquote { border-left: 4px solid #dfe2e5; padding-left: 16px; color: #6a737d; margin: 0 0 16px; }
+  ul, ol { padding-left: 2em; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #dfe2e5; padding: 6px 13px; }
+</style>
+</head>
+<body>
+
+<h1>OpenPGP para novatos</h1>
+<p>Si no conoces OpenPGP o solo lo utilizas para emails, esta guía te ayudará.</p>
+
+<!-- Pestañas -->
+<div class="tabs">
+  <div class="tab active" data-tab="tab1">Versión Corta</div>
+  <div class="tab" data-tab="tab2">Para qué usarlo</div>
+  <div class="tab" data-tab="tab3">101 P y R</div>
+</div>
+
+<!-- Contenidos -->
+<div id="tab1" class="tab-content active">
+  <h2>Versión Corta</h2>
+  <p>### 🔑 IMPORTANTE 🔐
+Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos. Con un clic pueden robar tu identidad o tu dinero.
+
+🎯 No es “no tener nada que ocultar”, tienes derecho y obligación de proteger tu seguridad, tu privacidad y tu libertad. El mundo está lleno de gente malvada que sabe mucho y quiere aprovecharse. Para ellos no eres especial, solo alguien más a quien arruinar la vida.
+
+✅ Solución: Usa un sobre opaco digital (OpenPGP). Solo tu destinatario podrá leer tu mensaje. Haz esto:
+
+▶Instala un gestor: https://openpgp.org/software  — Mailvelope/FlowCrypt (PC) 🖥│ OpenKeyChain (Android) │ EasyPGP (iOS) 📱
+
+▶Crea tus llaves pública y privada 🔐.
+
+▶Publica tu llave pública en https://keys.openpgp.org  (confirma el e-mail) 📧 — Avísame cuando lo hagas. 🗣
+
+▶Haz copia de seguridad de tus llaves y códigos/contraseña. 💾
+
+▶Descarga e importa mi llave 🔑  https://bit.ly/jimraynorkey
+
+▶Cifra un mensaje con mi llave y envíamelo. 🔐💬 Te guío si hace falta. 💪
+</p>
+  <pre><code>console.log("Hola mundo");</code></pre>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+</div>
+
+<div id="tab2" class="tab-content">
+  <h2>Para qué usarlo</h2>
+  <p>## ¿Para qué debería usar OpenPGP?
+
+Es común pensar que si has llegado "sano y salvo" hasta ahora, estando en internet, ¿por qué deberías cambiar tu actuar?
+
+El punto es el siguiente: Casi nadie le dedica tiempo a analizar y cuestionar, desde un punto de vista obsesivo hacia su seguridad, ¿qué podría pasar, cómo, cuando, donde **Y** por qué?
+
+Y faltaría el "para qué", que en esta ocasión no sería una pregunta, sinó, sería una respuesta: para protegerte. Y es que, ¿hay algo en tu interacción con internet que te dé miedo o inseguridad? ¿Lo tienes todo controlado a nivel Administrador de Sistemas? No, ¿verdad?
+
+Primero por que sin conocimiento especifico y medianamente técnico, no podrías tomar una decisión adecuada para ti.
+
+Y es que el groso de la sociedad con acceso a internet no tiene conocimientos básicos en materia informática, hacking, seguridad, e incluso capacidades analíticas mas allá del "si a todo, o no a todo" según el deseo de hacer/tener/formar parte de/no ser diferente.
+
+Internet, la tecnología y el hardware asociado ha evolucionado mucho y muy rápido, a la vez que se ha expandido exponencialmente el № de personas con uso activo, y lo peor de todo, sin conocimientos sobre  seguridad, riesgos, consecuencias…
+
+¿Resultado? Confianza ciega, ingenuidad, irresponsabilidad, ignorancia voluntaria, indiferencia ante tomar acciónes proteccionistas, robo de datos, pérdida de dinero, estafas, acoso físico y virtual, manipulación de datos, suplantacion de identidad, espionaje, suicidios por las consecuencias, rupturas familiares, asesinatos, manipulación/atribución con falsas palabras/acciones y más…
+
+¿Cómo cambiar esa percepión para tomar acción positiva?
+Dando ejemplos prácticos de situaciones donde los problemas en la vida real se pueden replicar en internet.
+
+## Fírmalo todo con tu Llave Privada
+
+>  #### Nota Importante
+
+> * Las llaves PGP no están vinculadas a un DNI, ni nombre real, etc.
+> 
+> * Las llaves PGP solo necesitan un alias, una dirección de Email (puede ser inventada, incluso, TuUsuario@TuRedSocial.com (recuerda que @ significa "en")) y quizás una contraseña, además de elegir el sistema de encriptado a usar, aunque los generadores de llaves suelen elegir el mas actual y seguro EdDSA/ECDH (curve25519).
+> * Solo la posesión de la Llave Privada y demostrar ser el poseedor del alias y/o email  te vincularía en el mundo físico; no hay organismos oficiales garantizando nada, y eso está bien.
+
+
+### Firma todos tus mensajes, ya sea tu email, tu whatsapp, telegram, facebook, instagram, twitter, etc.
+
+ * Cualquiera puede hackearte y usurpar tu perfil para publicar en tu nombre.
+ * Cualquiera puede falsear mensajes, para acusarte legalmente, por ejemplo en disputas matrimoniales.
+ * Cualquiera puede editar una captura de pantalla de una publicación tuya y acusarte o dañar tu reputación.
+
+Por eso la forma más segura de confirmar tu autoría real en todas tus publicaciones/comunicaciones es añadiendo tu firma pgp, la cual puede ser verificada por todos los que tengan tu llave pública.
+
+Es la respuesta lógica a ¿cómo sé que tú eres quien ha publicado eso realmente? ¿Cómo garantizo que nada ni nadie modifique o invente mis palabras/archivos?
+
+Y es que un simple espacio más, o menos, lo cambia todo, y la firma pgp así lo certifica. Es la versión digital a ser tu propio notario; la firma pgp da fé de autoría y no modificación por nada ni nadie en ningún momento.
+
+La llave privada (solo la posees tu) sería la que cifra, descifra y firma tus publicaciones/archivos y la llave pública la que tu audiencia tendría para cifrar sus comunicaciones/archivos hacia ti y para verificar tu firma en cada archivo/publicación creada por ti.
+
+>  A efectos legales, vale como defensa.
+
+Como prueba de integridad y autenticidad de un documento/mensaje digital, una firma PGP es una de las herramientas más poderosas que existen a nivel técnico.
+
+A efectos legales, es una prueba documental muy robusta que, presentada correctamente (a menudo con apoyo pericial), inclinará la balanza decisivamente a tu favor en casos de atribución falsa de contenido.
+
+No es un "comodín" legal absoluto. No resuelve disputas sobre la intención o el contexto, y su fuerza depende de que puedas demostrar que eres el único controlador de tu clave privada.
+
+Para que si llegase el momento de tener que defenderte puedas argumentar que ❝sin firma pgp, no lo has dicho/hecho tu❞, necesitarías tiempo y acciones que apoyasen tu palabra, por eso, cuanto antes la uses para absolutamente todo, mas confianza hacia ti generas.
+
+## Comunicaciones privadas y seguras al 100%
+
+Constantemente hay hackeos, robos de dispositivos y exposición de datos/archivos privados/íntimos y es que aunque no sea a ti, quizás a alguien con quien compartiste cualquier tipo de intimidades puede ser la víctima inicial y tu, el daño colateral.
+
+Por no haber cifrado el texto/archivo antes de enviarlo, ahora te ves envuelto/a en un problema que… ¡oh, casualidad! Nunca imaginaste que podría pasar, pero que obviamente vas a tener que sufrir todas las consecuencias irremediablemente.
+
+> ¿Cómo podrías haberte protegido?
+
+Tus documentos y tus palabras si no están cifrados **_con tus llaves_**, son y serán visibles para todo aquél que tenga acceso a algún punto en la comunicación, ya sea tu dispositivo, el de las personas receptoras y por supuesto el prestador del servicio.
+
+Los proveedores de email, los de mensajería instantánea, "la nube", etc. Son el punto intermedio en la comunicación. Y cualquiera de los 3 puntos (emisor, receptor e intermediario) pueden ser hackeados, infiltrados, o simplemente mentirte acerca de ❝la seguridad en su servicio❞.
+
+Sabio es el dicho que dice: ❝Hombre precavido vale por 2❞, por lo que la desconfianza hacia los demás y tener en cuenta las posibilidades para que algo salga mal (Ley de Murphy), deberían ser lo primero antes de actuar.
+
+No es lo mismo leer "Hola" que algo asi, y ambos dicen lo mismo.
+
+-----BEGIN PGP MESSAGE-----
+
+wV4DaWIsgrFoOeMSAQdA13W2514WMZDasAnC7ySpHiGqCIZKXrvqManQWqUSO0sw
+AtAohTF/AAhSm+Hi8VWBgpzMw8LZKkF3GLTD9+cB6tYYERXIM588WOhT1P7nKfMp
+0rcBZi+iIiASPG5fYnCIH003iEhMS/sAiwVwszHUWVrsE+1TWo+VdssjFB/6EMVc
+x40eM6XwZeWEMxSaQk5ernFIOuKw+QvRdZXAToOTiX+wfC03POfWQv+Md+ip1deO
+WSJrweCqcm5kziGiX2RTG00k0L1ujPhSJRySEjyt7ePtjNpyCqBLmJvaqJ0Po2+r
+uz0H2iuNI+bEywXa+KECA7rMif7yv7/yH50BC4OT0PG3ySE7Cu5rR04=
+=jo5u
+
+-----END PGP MESSAGE----- 
+
+Las personas y la Inteligencia artificial son capaces de leer, procesar, analizar y actuar en consecuencia a lo que leen/ven. Si un simple humano puede entenderlo, la IA lo hace exponencialmente superior, pues lo que se dice explicitamente, implicitamente, se sugiere, el tono, la forma, el léxico, la ortografía, y los hábitos son información muy valiosa para hacer perfiles personales, y todas las empresas big tech llevan años analizando, procesando y catalogándonos; todo por no haber usado cifrado pgp.
+
+### Aún no es tarde
+
+Más vale prevenir que curar, por lo que cuanto antes uses OpenPGP para todo, antes y más seguro estarás.
+
+## Más seguridad
+
+Puedes prevenir hackeos con el 2FA / OTP, con una Yubi key o similar, (y siempre cerrando sesión y borrar cookies para que no te roben la cookie de autenticación)
+
+No puedes evitar que las empresas/servicios se comuniquen contigo vía email sin cifradoPGP, pero si deseas que ningún proveedor de correo/hacker pueda analizar esas comunicaciones, la única solución es tener tu propio servidor SMTP para email, por lo que serías receptor e intermediario en la comunicación, y con una simple y barata Raspberry Pi lo tendrías en casa.
+
+## Consejo final
+
+Lo que nadie nos dijo al empezar en internet es que solo tú tienes el deber y la obligación en todo momento de buscar, conocer y proporcionarte todas las herramientas posibles para garantizar tu privacidad, seguridad, e intimidad, y a su vez, no confiar en ninguna empresa ni persona.
+</p>
+<!--  <table>
+    <tr><th>Nombre</th><th>Edad</th></tr>
+    <tr><td>Juan</td><td>30</td></tr>
+    <tr><td>Ana</td><td>25</td></tr>
+  </table> -->
+</div>
+
+<div id="tab3" class="tab-content">
+  <h2>101 P y R</h2>
+  <p># 101 Preguntas y respuestas acerca de OpenPGP
+  Aquí tienes un **índice temático de las 101 preguntas y respuestas sobre OpenPGP**, agrupadas por áreas de uso.
+
+---
+
+# 📖 Guía temática: 101 preguntas y respuestas sobre OpenPGP
+
+---
+
+## 🔐 Conceptos básicos (para todos)
+
+1. ¿Qué es OpenPGP?
+2. ¿Qué diferencia hay con PGP?
+3. ¿Qué es una clave pública y una privada?
+4. ¿Qué es un fingerprint?
+5. ¿Qué diferencia hay entre cifrar y firmar?
+6. ¿Qué pasa si olvido mi contraseña?
+7. ¿Qué es una clave de revocación?
+8. ¿Qué tamaño de clave elegir?
+9. ¿Qué es la “web of trust”?
+10. ¿Qué diferencia hay entre OpenPGP y un certificado digital oficial?
+
+---
+
+## 📱 Uso cotidiano y personal
+
+11. Proteger fotos privadas
+12. Proteger tu diario personal digital
+13. Cifrar contraseñas en un archivo
+14. Compartir claves WiFi seguras
+15. Guardar documentos en la nube de forma privada
+16. Proteger facturas digitales
+17. Cifrar un vídeo personal
+18. Cifrar un archivo de calendario
+19. Firmar tus posts de blog
+20. Compartir mensajes privados en redes sociales
+
+---
+
+## 👨‍👩‍👧‍👦 Uso familiar
+
+21. Compartir fotos o vídeos familiares de forma segura
+22. Intercambiar historiales médicos entre familiares
+23. Enseñar a los hijos a usar cifrado básico
+24. Mantener seguros documentos de la casa (contratos, alquileres, hipotecas)
+25. Compartir recetas médicas digitalizadas
+
+---
+
+## 💼 Uso en trabajo y empresa
+
+26. Proteger contratos laborales o de alquiler
+27. Firmar facturas electrónicas
+28. Enviar presupuestos confidenciales
+29. Usarlo en pymes para intercambiar archivos internos
+30. Verificar actualizaciones de software
+31. Firmar código de programación
+32. Firmar paquetes o distribuciones de software
+33. Integrarlo en negocios online (pedidos, facturas, datos de clientes)
+34. Firmar documentos académicos o papers de investigación
+35. Proteger backups de la empresa
+
+---
+
+## 📰 Periodismo, activismo y sociedad
+
+36. Proteger fuentes periodísticas
+37. Intercambiar documentos políticos o sociales sin riesgo
+38. Firmar comunicados colectivos
+39. Activistas que viajan a países con censura
+40. Proteger la identidad de denunciantes
+
+---
+
+## 💬 Comunicación y mensajería
+
+41. Usar en correos electrónicos (clásico)
+42. Cifrar mensajes en Telegram (enviado como archivo)
+43. Usar en WhatsApp (archivos cifrados)
+44. Cifrar chats completos en apps compatibles
+45. Enviar mensajes firmados para evitar suplantaciones
+46. Detectar mensajes manipulados
+
+---
+
+## ☁️ Archivos y nube
+
+47. Diferencia entre permisos en Drive y cifrado real
+48. Subir documentos a iCloud o Dropbox cifrados
+49. Proteger copias de seguridad
+50. Enviar archivos grandes cifrados por USB o nube
+
+---
+
+## 🎮 Juegos, ocio y creatividad
+
+51. Firmar mods o archivos de videojuegos
+52. Guardar partidas cifradas
+53. Usar en comunidades de gamers privadas
+54. Firmar tus obras creativas (música, libros, arte digital)
+55. Proteger guiones o proyectos de cine antes de publicarlos
+
+---
+
+## 🌍 Legalidad y contexto
+
+56. ¿Es legal usarlo en todos los países?
+57. Riesgos de viajar con claves en dispositivos
+58. Diferencia con ZIP/PDF con contraseña
+59. Seguridad frente a ataques de fuerza bruta
+60. Limitaciones legales en países con censura
+
+---
+
+## 🧑‍💻 Casos técnicos (pero sin comandos)
+
+61. ¿Qué pasa si alguien envía un archivo corrupto?
+62. ¿Se puede usar offline?
+63. ¿Qué pasa si cambio de móvil o PC?
+64. ¿Qué ocurre si dos personas tienen la misma clave pública?
+65. ¿Qué tamaño ocupan los archivos cifrados?
+66. ¿Se puede usar para autenticación en servicios web?
+67. ¿Sirve para validar actualizaciones?
+68. ¿Qué ocurre si alguien intenta descifrar mis mensajes?
+69. Diferencia con cifrado simétrico
+70. Cifrar para varios destinatarios
+
+---
+
+## 🚀 Usos avanzados e innovadores
+
+71. Usar en transacciones de criptomonedas (firma de mensajes)
+72. Proteger identidad digital en foros
+73. Publicar tu clave pública en internet sin riesgo
+74. Crear una red privada de amigos/familiares
+75. Usarlo en cooperativas o comunidades pequeñas
+76. Firmar entradas de calendario compartidas
+77. Integrarlo en un blog o web personal
+78. Proteger datos de smart home (IoT)
+79. Mantener chats privados fuera de apps comerciales
+80. Verificar identidad en entrevistas online
+
+---
+
+## 🧩 Comparaciones y preguntas frecuentes
+
+81. ¿Diferencia entre OpenPGP y Signal/WhatsApp?
+82. ¿Diferencia entre PGP y OpenPGP?
+83. ¿Ventaja sobre contraseñas ZIP o PDF?
+84. ¿Vale la pena aprenderlo si no soy técnico?
+85. ¿Por qué usarlo si ya tengo SSL/HTTPS en webs?
+86. ¿Qué ventajas da frente a gestores de contraseñas?
+87. ¿Cómo se compara con firmas electrónicas oficiales?
+88. ¿Qué diferencia hay con blockchain?
+89. ¿Por qué no lo usan más personas si es tan seguro?
+90. ¿Qué pasa si Google o Apple fallan, pero cifro con OpenPGP?
+
+---
+
+## 🧭 Futuro y reflexión
+
+91. ¿Será útil en la era de la computación cuántica?
+92. ¿Es práctico para todo el mundo?
+93. ¿Puede combinarse con biometría (huella, cara)?
+94. ¿Puede servir en la educación digital?
+95. ¿Ayuda a la privacidad de los menores?
+96. ¿Tiene sentido en un mundo donde casi todo se guarda en la nube?
+97. ¿Es una herramienta política además de técnica?
+98. ¿Puede convertirse en un estándar masivo?
+99. ¿Cómo cambia la mentalidad al aprenderlo?
+100. ¿Por qué debería empezar hoy mismo?
+101. ¿Qué futuro tendrá si lo adaptan a apps móviles sencillas?
+
+
+  </p>
+<!--  <blockquote>Esta es una cita de ejemplo.</blockquote>
+  <ol>
+    <li>Paso 1</li>
+    <li>Paso 2</li>
+    <li>Paso 3</li>
+  </ol> -->
+</div>
+
+<!-- Script para activar pestañas -->
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Desactivar todas
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      // Activar la seleccionada
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
