@@ -7,7 +7,7 @@ Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos. Con un cl
 
 ▶Instala un gestor: https://openpgp.org/software  — Mailvelope/FlowCrypt (PC) 🖥│ OpenKeyChain (Android) │ EasyPGP (iOS) 📱
 
-▶Crea tus llaves pública y privada 🔐.
+▶Crea tus llaves pública y privada 🔐.https://pgpkeygenerator.com/
 
 ▶Publica tu llave pública en https://keys.openpgp.org  (confirma el e-mail) 📧 — Avísame cuando lo hagas. 🗣
 
