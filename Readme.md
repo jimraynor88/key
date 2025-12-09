@@ -4,7 +4,8 @@
 
 ✅ Solución: Usa un "sobre opaco digital" (PGP). Solo tu destinatario podrá leer tu mensaje. Haz esto:
 
-▶Instala un gestor: https://openpgp.org/software — Mailvelope / FlowCrypt (Navegador Web PC) 🌐 │ Kleopatra (Linux) / GPG4win (Windows)  🖥│ OpenKeyChain (Android) / EasyPGP (iOS) 📱
+▶Instala un gestor: https://openpgp.org/software
+Mailvelope / FlowCrypt (Navegador Web PC) 🌐 │ Kleopatra (Linux) / GPG4win (Windows)  🖥│ OpenKeyChain (Android) / EasyPGP (iOS) 📱
 
 ▶Descarga e importa mi Public Key en el gestor 🔑 https://s.id/JimPK
 
