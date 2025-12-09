@@ -1,18 +1,13 @@
-### 🔑 IMPORTANTE 🔐
-Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos. Con un clic pueden robar tu identidad o tu dinero.
+🔑 IMPORTANTE 🔐 Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos.
 
-🎯 No es “no tener nada que ocultar”, tienes derecho y obligación de proteger tu seguridad, tu privacidad y tu libertad. El mundo está lleno de gente malvada que sabe mucho y quiere aprovecharse. Para ellos no eres especial, solo alguien más a quien arruinar la vida.
+🎯 No se trata de «no tener nada que ocultar», tienes el derecho y la obligación de proteger tu privacidad, seguridad y libertad. El mundo está lleno de gente malvada que sabe mucho y quiere aprovecharse. Para ellos no eres especial, solo alguien más a quien arruinar la vida.
 
-✅ Solución: Usa un sobre opaco digital (OpenPGP). Solo tu destinatario podrá leer tu mensaje. Haz esto:
+✅ Solución: Usa un "sobre opaco digital" (PGP). Solo tu destinatario podrá leer tu mensaje. Haz esto:
 
-▶Instala un gestor: https://openpgp.org/software  — Mailvelope/FlowCrypt (PC) 🖥│ OpenKeyChain (Android) │ EasyPGP (iOS) 📱
+▶Instala un gestor: https://openpgp.org/software — Mailvelope / FlowCrypt (Navegador Web PC) 🌐 │ Kleopatra (Linux) / GPG4win (Windows)  🖥│ OpenKeyChain (Android) / EasyPGP (iOS) 📱
 
-▶Crea tus llaves pública y privada. 🔐 https://pgpkeygenerator.com/
+▶Descarga e importa mi Public Key en el gestor 🔑 https://s.id/JimPK
 
-▶Publica tu llave pública en https://keys.openpgp.org  (confirma el e-mail) 📧 — Avísame cuando lo hagas. 🗣
+▶Crea tus claves, guardalas en lugar seguro e importa SOLO tu Private Key 🔐 https://pgpkeygenerator.com
 
-▶Haz copia de seguridad de tus llaves y códigos/contraseña. 💾
-
-▶Descarga e importa mi llave. 🔑  https://s.id/JimPK
-
-▶Cifra un mensaje con mi llave y envíamelo. 🔐💬 Te guío si hace falta. 💪
+▶Cifra un mensaje, destinatario mi clave, añade tu Public Key (archivo o texto) y envíamelo. 🔐💬 Te guío si quieres 💪
