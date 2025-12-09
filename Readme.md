@@ -7,12 +7,12 @@ Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos. Con un cl
 
 ▶Instala un gestor: https://openpgp.org/software  — Mailvelope/FlowCrypt (PC) 🖥│ OpenKeyChain (Android) │ EasyPGP (iOS) 📱
 
-▶Crea tus llaves pública y privada 🔐.https://pgpkeygenerator.com/
+▶Crea tus llaves pública y privada. 🔐 https://pgpkeygenerator.com/
 
 ▶Publica tu llave pública en https://keys.openpgp.org  (confirma el e-mail) 📧 — Avísame cuando lo hagas. 🗣
 
 ▶Haz copia de seguridad de tus llaves y códigos/contraseña. 💾
 
-▶Descarga e importa mi llave 🔑  https://bit.ly/jimraynorkey
+▶Descarga e importa mi llave. 🔑  https://s.id/JimPK
 
 ▶Cifra un mensaje con mi llave y envíamelo. 🔐💬 Te guío si hace falta. 💪
