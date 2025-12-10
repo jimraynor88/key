@@ -8,7 +8,7 @@
 
 Mailvelope / FlowCrypt (Navegador Web PC) 🌐 │ Kleopatra (Linux) / GPG4win (Windows)  🖥│ OpenKeyChain (Android) / EasyPGP (iOS) 📱
 
-▶ Descarga e importa mi Public Key en el gestor 🔑 https://s.id/JimPK
+▶ Descarga e importa mi Public Key en el gestor 🔑 https://s.id/JimPublicKey
 
 ▶ Crea tus claves, guardalas en lugar seguro e importa SOLO tu Private Key 🔐 https://pgpkeygenerator.com
 
