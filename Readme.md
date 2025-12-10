@@ -1,4 +1,4 @@
-🔑 IMPORTANTE 🔐 Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos.
+🔑 IMPORTANTE 🔐 Tus mensajes viajan como una postal abierta. Cualquiera puede leerlos y el Chat Control de la UE en especial.
 
 🎯 No se trata de «no tener nada que ocultar», tienes el derecho y la obligación de proteger tu privacidad, seguridad y libertad. El mundo está lleno de gente malvada que sabe mucho y quiere aprovecharse. Para ellos no eres especial, solo alguien más a quien arruinar la vida.
 
